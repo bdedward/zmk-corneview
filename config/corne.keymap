@@ -189,7 +189,7 @@
 //                    |   |  |    |  |   |  |    |
                         bindings = <
    &kp LALT &td_1_f1 &td_2_f2 &td_3_f3 &td_4_f4 &td_5_f5 &trans &trans &trans &trans &trans &trans
-   &td_6_f6 &td_7_f7 &td_8_f8 &td_9_f9 &tap_dance_0_f10 &kp INS &trans &trans &trans &trans &trans &trans 
+   &td_6_f6 &td_7_f7 &td_8_f8 &td_9_f9 &td_0_f10 &kp INS &trans &trans &trans &trans &trans &trans 
    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
                                     &trans &trans  &trans           &trans  &trans &trans
                         >;
