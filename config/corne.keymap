@@ -46,6 +46,86 @@
                 bindings = <&kp RSHFT>, <&kp SQT>;
                 };
 
+                td_1_f1: tap_dance_1_f1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>; // Adjust tapping term as needed
+            bindings = <&kp N1>, <&kp F1>;
+                };
+
+                // Tap dance for 2 or F2
+                td_2_f2: tap_dance_2_f2 {
+                compatible = "zmk,behavior-tap-dance";
+                #binding-cells = <0>;
+                tapping-term-ms = <200>;
+                bindings = <&kp N2>, <&kp F2>;
+                };
+
+                // Tap dance for 3 or F3
+                td_3_f3: tap_dance_3_f3 {
+                compatible = "zmk,behavior-tap-dance";
+                #binding-cells = <0>;
+                tapping-term-ms = <200>;
+                bindings = <&kp N3>, <&kp F3>;
+                };
+
+                // Tap dance for 4 or F4
+                td_4_f4: tap_dance_4_f4 {
+                compatible = "zmk,behavior-tap-dance";
+                #binding-cells = <0>;
+                tapping-term-ms = <200>;
+                bindings = <&kp N4>, <&kp F4>;
+                };
+
+                // Tap dance for 5 or F5
+                td_5_f5: tap_dance_5_f5 {
+                compatible = "zmk,behavior-tap-dance";
+                #binding-cells = <0>;
+                tapping-term-ms = <200>;
+                bindings = <&kp N5>, <&kp F5>;
+                };
+
+                // Tap dance for 6 or F6
+                td_6_f6: tap_dance_6_f6 {
+                compatible = "zmk,behavior-tap-dance";
+                #binding-cells = <0>;
+                tapping-term-ms = <200>;
+                bindings = <&kp N6>, <&kp F6>;
+                };
+
+                // Tap dance for 7 or F7
+                td_7_f7: tap_dance_7_f7 {
+                compatible = "zmk,behavior-tap-dance";
+                #binding-cells = <0>;
+                tapping-term-ms = <200>;
+                bindings = <&kp N7>, <&kp F7>;
+                };
+
+                // Tap dance for 8 or F8
+                td_8_f8: tap_dance_8_f8 {
+                compatible = "zmk,behavior-tap-dance";
+                #binding-cells = <0>;
+                tapping-term-ms = <200>;
+                bindings = <&kp N8>, <&kp F8>;
+                };
+
+                // Tap dance for 9 or F9
+                td_9_f9: tap_dance_9_f9 {
+                compatible = "zmk,behavior-tap-dance";
+                #binding-cells = <0>;
+                tapping-term-ms = <200>;
+                bindings = <&kp N9>, <&kp F9>;
+                };
+
+                // Tap dance for 0 or F10
+                td_0_f10: tap_dance_0_f10 {
+                compatible = "zmk,behavior-tap-dance";
+                #binding-cells = <0>;
+                tapping-term-ms = <200>;
+                bindings = <&kp N0>, <&kp F10>;
+                };
+
+
                
         };
 
@@ -108,8 +188,8 @@
 // |  |  |  |   |   |   |   |   KC_MS_WH_DOWN   |    | INS |      |    |  |
 //                    |   |  |    |  |   |  |    |
                         bindings = <
-   &kp LALT &kp N1 &kp N2 &kp N3 &kp N5 &kp N6 &trans &trans &trans &trans &trans &trans
-   &kp N7 &kp N8 &kp N9 &kp N0 &trans &kp INS &trans &trans &trans &trans &trans &trans 
+   &kp LALT &td_1_f1 &td_2_f2 &td_3_f3 &td_4_f4 &td_5_f5 &trans &trans &trans &trans &trans &trans
+   &td_6_f6 &td_7_f7 &td_8_f8 &td_9_f9 &tap_dance_0_f10 &kp INS &trans &trans &trans &trans &trans &trans 
    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
                                     &trans &trans  &trans           &trans  &trans &trans
                         >;
