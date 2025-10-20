@@ -14,6 +14,16 @@
 #undef ZMK_MOUSE_DEFAULT_MOVE_VAL
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1900
 
+&spi1 {
+    cs-gpios = <&gpio0 6 GPIO_ACTIVE_LOW>; // P0.06
+};
+
+&nice_view {
+    compatible = "nice_view";
+    spi-max-frequency = <10000000>;
+    reg = <0>;
+    spi-cs-gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
+};
 
 
 / {
