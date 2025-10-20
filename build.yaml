@@ -21,8 +21,8 @@
 include:
   - board: nice_nano_v2
     shield: corne_left nice_view_adapter nice_view
-    cmake-args: -DDTC_OVERLAY_FILE=config/config/nice_nano.overlay
+    cmake-args: -DDTC_OVERLAY_FILE=${ZMK_CONFIG}/nice_nano.overlay
     artifact-name: corne_left_custom_cs
   - board: nice_nano_v2
     shield: corne_right nice_view_adapter nice_view
-    cmake-args: -DDTC_OVERLAY_FILE=config/config/nice_nano.overlay
+    cmake-args: -DDTC_OVERLAY_FILE=${ZMK_CONFIG}/nice_nano.overlay
