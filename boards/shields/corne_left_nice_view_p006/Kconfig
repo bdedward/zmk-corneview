@@ -1,0 +1,3 @@
+config SHIELD_CORNE_LEFT_NICE_VIEW_CUSTOM
+    bool "Corne Left with Nice!View and CS on P0.06"
+    depends on SHIELD_CORNE_LEFT
