@@ -1,6 +1,5 @@
 /* Force rebuild: overlay permission fix */
 
-
 / {
     behaviors {
         /delete-node/ zmk_behavior_momentary_layer;
