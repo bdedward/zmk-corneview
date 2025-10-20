@@ -23,17 +23,17 @@
     pinctrl-1 = <&spi1_sleep>;
     pinctrl-names = "default", "sleep";
 
-    nice_view: ls0xx@0 {
+    nice_view_custom: ls0xx@0 {
         compatible = "ls0xx";
         reg = <0>;
         spi-max-frequency = <10000000>;
         width = <128>;
         height = <64>;
-        label = "NiceView";
-        spi-cs-gpios = <&gpio0 6 GPIO_ACTIVE_LOW>; /* P0.06 as CS */
+        label = "NiceViewCustom";
+        spi-cs-gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
     };
 };
 
 &{/chosen} {
-    zephyr,display = &nice_view;
+    zephyr,display = &nice_view_custom;
 };
