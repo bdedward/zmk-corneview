@@ -1,6 +1,6 @@
 / {
     behaviors {
-        /delete-node/ behavior_momentary_layer;
+        /delete-node/ zmk_behavior_momentary_layer;
 
         mom: behavior_momentary_layer {
             compatible = "zmk,behavior-momentary-layer";
