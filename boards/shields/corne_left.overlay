@@ -1,5 +1,7 @@
 / {
     behaviors {
+        /delete-node/ behavior_momentary_layer;
+
         mom: behavior_momentary_layer {
             compatible = "zmk,behavior-momentary-layer";
             label = "MOMENTARY";
